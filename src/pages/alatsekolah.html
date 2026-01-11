@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>School Supplies - PRODUK</title>
+    <link rel="stylesheet" href="/src/style/global.css">
+    <style>
+        /* ==============================
+           STYLING GRID UNTUK SCHOOL SUPPLIES
+        ============================== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .product h4 a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .product h4 a:hover {
+            color: #0056b3;
+        }
+
+        .product p.discount {
+            font-size: 18px;
+            color: red;
+            margin: 8px 0;
+            font-weight: bold;
+        }
+
+        .btn-keranjang {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            background-color: #ffcc00;
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .btn-keranjang:hover {
+            background-color: #e6b800;
+        }
+
+        .detail-img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>TOKO FENI</h1>
+</div>
+
+<div class="content">
+
+    <h2>School Supplies</h2>
+
+    <!-- PRODUK 1 -->
+    <div class="product">
+        <p class="discount">🔥 DISKON 10%</p>
+        <img src="/src/assets/images/buku.jpg" class="detail-img" alt="Buku">
+        <h4><a href="https://www.google.com/search?q=buku" target="_blank">Buku</a></h4>
+        <a class="btn-keranjang" href="#">🛒 Keranjang</a>
+    </div>
+
+    <!-- PRODUK 2 -->
+    <div class="product">
+        <p class="discount">🔥 DISKON 5%</p>
+        <img src="/src/assets/images/pulpen.jpg" class="detail-img" alt="Pulpen">
+        <h4><a href="https://www.google.com/search?q=pulpen" target="_blank">Pulpen</a></h4>
+        <a class="btn-keranjang" href="#">🛒 Keranjang</a>
+    </div>
+
+    <!-- PRODUK 3 -->
+    <div class="product">
+        <p class="discount">🔥 DISKON 8%</p>
+        <img src="/src/assets/images/mistar.jpg" class="detail-img" alt="Mistar">
+        <h4><a href="https://www.google.com/search?q=mistar" target="_blank">Mistar</a></h4>
+        <a class="btn-keranjang" href="#">🛒 Keranjang</a>
+    </div>
+
+</div>
+
+</body>
+</html>

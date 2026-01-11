@@ -1,0 +1,338 @@
+/* ==============================
+   GLOBAL
+================================*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* ==============================
+   HEADER
+================================*/
+.header {
+    border-bottom: 2px solid #333;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 90px;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   BANNER
+================================*/
+.banner {
+    height: 200px;
+    background-color: #ddd;
+    border-bottom: 2px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* ==============================
+   SIDEBAR
+================================*/
+.sidebar {
+    width: 300px;
+    float: left;
+    padding: 30px;
+    background-color: #fff;
+    border-right: 2px solid #ccc;
+    min-height: 100vh;
+}
+
+.sidebar h3 {
+    font-size: 26px;
+}
+
+.sidebar ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* ==============================
+   PRODUCT
+================================*/
+.content {
+    margin-left: 300px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.product {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.product p strong {
+    color: red;
+}
+
+.product img.image {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+/* ==============================
+   NAMA PRODUK BESAR
+================================*/
+.product h5 {
+    font-size: 28px; /* diperbesar */
+    margin: 10px 0;
+}
+
+.product h5 a {
+    color: #1565c0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product h5 a:hover {
+    text-decoration: underline;
+}
+
+/* HARGA */
+.price {
+    margin: 8px 0;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.price span {
+    color: #d32f2f;
+}
+
+/* TOMBOL TOKO */
+.btn-toko {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 10px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-toko:hover {
+    background-color: #1b5e20;
+}
+
+/* ==============================
+   CONTACT PAGE
+================================*/
+.contact-page {
+    margin-left: 300px;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box {
+    background: #fff;
+    padding: 35px;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contact-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-box button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background: #5a67d8;
+}
+
+/* ==============================
+   SERVICE PAGE
+================================*/
+.service-page {
+    margin-left: 300px;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-box {
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    margin: auto;
+}
+
+.service-box h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-box a.btn-service {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 10px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.service-box a.btn-service:hover {
+    background-color: #1b5e20;
+}
+
+/* ==============================
+   FOOTER
+================================*/
+.footer {
+    clear: both;
+    padding: 15px;
+    background-color: #eee;
+    text-align: center;
+    border-top: 2px solid #999;
+    margin-top: 40px;
+}
+
+/* ==============================
+   RESPONSIVE
+================================*/
+@media (max-width: 700px) {
+    .content {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .contact-page,
+    .service-page {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
